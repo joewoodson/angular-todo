@@ -91,12 +91,21 @@ body {
   .header {
     margin-bottom: 30px;
   }
+}
+/* line 89, ../../app/styles/main.scss */
+.input-group {
+  margin-bottom: 10px;
+}
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 86, ../../app/styles/main.scss */
-  .jumbotron {
-    border-bottom: 0;
-  }
+/* line 93, ../../app/styles/main.scss */
+.list-item {
+  padding: 5px 10px;
+  cursor: move;
+}
+
+/* line 98, ../../app/styles/main.scss */
+.container {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
