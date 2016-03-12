@@ -2,7 +2,7 @@
   <h2>Todo List</h2>
 
   <!-- Add todo -->
-  <form role="form" ng-submit="addTodo()"></form>
+  <form role="form" ng-submit="addTodo()">
     <div class="row">
       <div class="input-group">
         <input type="text" ng-model="todo" placeholder="Add a todo" class="form-control">
@@ -14,9 +14,15 @@
   </form>
 
   <!-- Todo list -->
-  <p class="form-group" ng-repeat="todo in todos">
-    <input type="text" ng-model="todo" class="form-control">
-  </p>
+  <div ui-sortable ng-model="todos">
+    <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+      <input type="text" ng-model="todo" class="form-control">
+      <span class="input-group-btn">
+        <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+      </span>
+    </p>
+  </div>
+  
 </div>
 
 
